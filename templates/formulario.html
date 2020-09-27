@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<body>
+	<div class="consulta">
+		<div class="form_wrap">
+			<section class="main">
+				<section class="articles">
+					<article>
+						<h2>Registro</h2>
+						<div class="consulta">.</div>
+					</article>
+				</section>
+			<div id="formulario">
+
+				<form action="" method="POST">
+                    {% csrf_token %}
+                    <table>
+                        {{ form.as_table }}
+                    </table>
+                    <br>
+                    
+                    <input type="submit" value="ENVIAR">
+                
+                </form>  
+                {{ mensaje }}
+
+			</div>
+
+			</section>
+		</div>
+	</div>
+</body>
+    <!--<!DOCTYPE html>
+    <html>
+    <head>
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/js.js"></script>
+    </head>
+        <body>
+        <div>
+            <section class="form_wrap">
+                <section class="cantact_info">
+                    <section class="info_title">
+                        <span class="fa fa-user-circle"></span>
+                        <h2>INFORMACION<br>DE CONTACTO</h2>
+                    </section>
+                    <section class="info_items">
+                        <p><span class="fa fa-envelope"></span> info.tecnoagro@gmail.com</p>
+                        <p><span class="fa fa-mobile"></span> +1(585) 902-8665</p>
+                    </section>
+                </section>
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        <table>
+                            {{ form.as_table }}
+                        </table>
+
+                        <input type="reset" value="LIMPIAR">
+                        <input type="submit" value="GUARDAR">
+
+                    </form>  
+                    {{ mensaje }}
+            </section>
+        </div>
+        </body>
+    </html>-->
+{% endblock %}	

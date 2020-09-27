@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <!DOCTYPE html>
+  <html lang="es-ar">
+  <title>HOME</title>
+
+  <body>
+
+<!-- Sidebar -->
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Que hacemos</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-green" href="#Relevamiento con dron">Relevamiento con dron</a>
+    <a class="w3-bar-item w3-button w3-hover-green" href="#Evaluación de proyectos Agropecuarios">Evaluación de proyectos Agropecuarios</a>
+    <a class="w3-bar-item w3-button w3-hover-green" href="#Implementación de sistemas">Implementación de sistemas</a>
+    <a class="w3-bar-item w3-button w3-hover-green" href="#Teledetección satelital">Teledetección satelital</a>
+  
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+  <div class="w3-main" style="margin-left:250px">
+
+    <div class="w3-row w3-padding-64" id="Relevamiento con dron">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Relevamiento con dron</h1>
+        <p>El objetivo de esta tecnología es proveer y promover soluciones inteligentes reduciendo costos y riesgos de manera que nos ayuden a mejorar la calidad de nuestra producción, mejorar rendimientos, y márgenes de cultivo. El monitoreo de cultivos con este tipo de vehículos permite tener información precisa en corto lapso de tiempo entre el vuelo, ayudando en la toma correcta de decisiones.
+        <h4 class="w3-bar-item"><b>Estos equipos tienen algunas ventajas en el Agro: </b></h4>
+        <p>Pueden volar en cualquier momento, salvo excepciones como alto viento o lluvias, a diferencia de satélites que pasan cada un determinado número de días y de haber nubosidad estas imágenes no son de utilidad.</p>
+        <p>Disminuye tiempo de trabajo en el campo, podemos relevar todo el lote, y procesar dicha información en horas.</p>
+        <p>Mejora la resolución de la imagen respecto a un satélite, obteniendo imágenes desde 2/4 pixeles.</p>
+      </div>
+        
+      <div class="w3-third w3-container">
+        <p class="w3-border w3-padding-32 w3-padding-32 w3-center"><iframe width="300" height="200" src="https://www.youtube.com/embed/bOHZTFLj6Vo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+      </div>
+    </div>
+
+    <div class="w3-row w3-padding-64" id="Evaluación de proyectos Agropecuarios">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Evaluación de proyectos Agropecuarios</h1>
+        <h4 class="w3-bar-item"><b>Identificación del proyecto: </b></h4>
+        <p>Definición del proyecto. Diagnóstico e identificación del problema. Procedimientos de participación de los beneficiarios. El marco de análisis. Recolección de datos. Identificación de alternativas de solución.</p>
+        <h4 class="w3-bar-item"><b>Preparación del proyecto: </b></h4>
+        <p>Lineamientos para un posible proyecto.  Diseño del proyecto.  Definición de objetivos y métodos. Indicadores. Análisis del marco lógico. Diseño de los componentes individuales.</p>
+        <h4 class="w3-bar-item"><b>Evaluación del proyecto: </b></h4>
+        <p>Diferentes criterios para la decisión de invertir. Evaluación financiera, económica y social (BAN, TIR, PAYBACK).  Los aspectos ambientales. Análisis de sensibilidad. El riesgo y la incertidumbre en la evaluación del proyecto.</p>
+      </div>
+        <div class="w3-third w3-container">
+          <img src="/static/media/eval-proyecto2.jpg" alt="Eval. de proyecto" width="300" height="200">
+          <!--<p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>>-->
+        </div>
+    </div>
+
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container" id="Implementación de sistemas">
+        <h1 class="w3-text-teal">Implementación de sistemas</h1>
+        <p>Integrar sistemas supone unificar criterios de actuación, procesos y recursos empleados de los distintos sistemas existentes, configurando una estructura única que dé respuesta a los requisitos de las distintas partes interesadas.</p>
+        <p>El objetivo prioritario de la implementación de sistemas integrados es evitar y eliminar duplicidades, optimizar recursos y simplificar al máximo la gestión de todos los sistemas, mejorando así el rendimiento.</p>
+      </div>
+      <div class="w3-third w3-container">
+        <img src="/static/media/impl-sistem.jpg" alt="imagen" width="300" height="200">
+        <!--<p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>-->
+      </div>
+    </div>
+
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container" id="Teledetección satelital">
+        <h1 class="w3-text-teal">Teledetección satelital</h1>
+        <p>Realizar mapas del terreno que servirán para definir usos agrícolas y monitorizar cultivos.</p>
+        <p>La Teledetección agrícola, u observación satelital, es una herramienta que nos permite observar los cultivos de a gran escala de manera sinóptica, remota y no destructiva.</p>
+        <p>Gracias a la periodicidad de las imágenes satelitales, en el caso de las imágenes Sentinel-2 cada cinco días, es posible obtener series temporales que nos permiten hacer un seguimiento del estado fenológico de los cultivos, detectar patrones de crecimiento, anomalías como plagas y enfermedades, requerimientos de agua y demás factores que determinarán su producción.</p>
+      </div>
+      <div class="w3-third w3-container">
+        <img src="/static/media/tel-satelital.jpg" alt="imagen" width="300" height="200">
+        <!--<p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>-->
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
+
+{% endblock %}	

@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header, .main, footer {
+	
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+header nav {
+	background: #528FD5;
+}
+
+.menu{
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	width: 100%;
+	
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+
+
+.menu li{
+
+	display: inline-block;
+}
+
+.menu li a {
+	padding: 10px 20px;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu li a:hover {
+	background: #ccc; 
+	color:#000;
+}
+
+
+.main .articles {
+	width: 68.5%;
+	float: left;
+	margin-right: 1.5%;
+}
+
+.main .articles article {
+	padding: 25px;
+	margin-bottom: 20px;
+}
+aside {
+	width: 30%;
+	float: left;
+	padding: 20px; 
+	box-sizing: border-box;
+}
+
+footer {
+	clear: both;
+	padding:10px 0px; 
+	text-align: center;
+}
+
+form{
+	width:30%;
+	
+	margin: 2%;
+	padding: 15px;
+	 
+
+}
+
+label {
+	font-size: 12px;
+	display: block;
+	width: 100%;
+}
+
+textarea{
+	resize: vertical;
+	max-height: 300px;
+	min-height: 100px;
+}
+
+input, textarea{
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+}
+
+
+input:focus, textarea:focus {
+	border: 1px solid #1668C4;
+
+}
+
+
+input[type="submit"] {
+	margin-bottom: 0;
+	background: #14bd22;
+	color: #fff;
+	border: none;
+}
+
+
+input[type="submit"]:hover{
+	background: #14bd22;
+	cursor: pointer;
+}
+
+.consulta{
+	margin :3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

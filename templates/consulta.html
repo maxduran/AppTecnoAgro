@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+	<div class="consulta">
+		<div class="form_wrap">
+			<section class="main">
+				<section class="articles">
+					<article>
+						<h2>Contacto</h2>
+						<div class="consulta">Deje su consulta y nos contactamos a la brevedad.</div>
+					</article>
+				</section>
+			<div id="formulario">
+
+				<form action="" method="POST">
+                    {% csrf_token %}
+                    <table>
+                        {{ form.as_table }}
+                    </table>
+                    <br>
+                    
+                    <input type="submit" value="ENVIAR">
+                
+                </form>  
+                {{ mensaje }}
+
+			</div>
+
+			</section>
+		</div>
+	</div>
+</body>	
+{% endblock %}	

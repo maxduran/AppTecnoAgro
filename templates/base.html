@@ -1,0 +1,79 @@
+{% load static %}
+
+<html>
+        <head>
+
+            <title>TECNO AGRO</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-green.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" type="text/css" href="{% static 'ccs/estilo.css' %}">
+            <link rel="stylesheet" type="text/css" href="{% static 'ccs/estilo8.css' %}">
+            
+
+        </head>
+        <body>
+            <div class="micontainer">
+            <header class="blog-header py-3"></header>
+                <!-- Navbar -->
+                <div class="w3-top">
+                    <div class="w3-bar w3-theme w3-top w3-left-align w3-large w3-black">
+                        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+                        <a href="{% url 'home'%}" class="w3-bar-item w3-button w3-theme-l1"><img src="/static/media/logo_tecnoagro (8).jpeg" alt="logo_8" width="60" height="40"></a>
+                        <a href="{% url 'home'%}" class="w3-bar-item w3-button w3-hide-small w3-hover-black">Inicio</a>
+                        <a href="{% url 'somos'%}" class="w3-bar-item w3-button w3-hide-small w3-hover-black">Quienes somos</a>
+                        <a href="{% url 'aplicaciones'%}" class="w3-bar-item w3-button w3-hide-small w3-hover-black">Aplicaciones</a>
+                        <a href="{% url 'registro'%}" class="w3-bar-item w3-button w3-hide-small w3-hover-black">Registro</a>
+                        <a href="{% url 'consulta'%}" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-black">Contacto</a>
+                        <a href="{% url 'descargas'%}" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-black">Descargas</a>
+                    </div>
+                </div>
+            </header>
+            {% block content %}
+
+
+            {% endblock %}
+            </div>
+            <footer id="myFooter">
+                <div class="w3-container w3-theme-l2 w3-large">
+                  <h4>TECNOAGRO 2020</h4>
+                </div>
+            
+                <div class="w3-container w3-theme-l1">
+                  <img src="/static/media/logo_tecnoagro (2).jpeg" alt="logo_6" width="50" height="50">
+                  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Grupo Nº 4</a></p>
+                </div>
+              </footer>
+            
+            <!-- END MAIN -->
+            </div>
+            
+            <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
+            
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+            
+            // Toggle between showing and hiding the sidebar, and add overlay effect
+            function w3_open() {
+              if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+              } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+              }
+            }
+            
+            // Close the sidebar with the close button
+            function w3_close() {
+              mySidebar.style.display = "none";
+              overlayBg.style.display = "none";
+            }
+            </script>
+        </body>
+</html>

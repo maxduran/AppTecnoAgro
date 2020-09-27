@@ -1,0 +1,41 @@
+
+            
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        <div class="user_info"> 
+                            <table>
+                                {{ form.as_table }}
+                                
+                            </table>
+                        </div>
+                        <input type="reset" value="LIMPIAR">
+                        <input type="submit" value="GUARDAR">
+                    
+                    </form>  
+                    {{ mensaje }}
+<!--(primer registro de ejemplo)-->
+
+                <!--<form action="" class="form_contact">
+                    <h2>Registro de Usuario</h2>
+                    <div class="user_info">
+                        <label for="names">Nombre/Apellido </label>
+                        <input type="text" id="names">
+
+                        <label for="phone">Telefono / Celular</label>
+                        <input type="text" id="phone">
+
+                        <label for="email">Correo electronico </label>
+                        <input type="text" id="email">
+
+                        <label for="Provincia">Provincia</label>
+                        <input type="text" id="Provincia">
+
+                        <label for="Localidad">Localidad</label>
+                        <!--textarea id="domicilio"></textarea
+                        <input type="text" id="Localidad">
+
+
+                        <input type="button" value="Enviar Registro" id="btnSend">
+                    </div>
+                </form>-->
+            

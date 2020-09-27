@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="es-ar">
+<title>QUIENES SOMOS</title>
+
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Equipo de trabajo</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-green" href="#">Nombre</a>
+  <a class="w3-bar-item w3-button w3-hover-green" href="#">Nombre</a>
+  <a class="w3-bar-item w3-button w3-hover-green" href="#">Nombre</a>
+  <a class="w3-bar-item w3-button w3-hover-green" href="#">Nombre</a>
+  <a class="w3-bar-item w3-button w3-hover-green" href="#">Nombre</a>
+  <a class="w3-bar-item w3-button w3-hover-green" href="#">Nombre</a>
+  <a class="w3-bar-item w3-button w3-hover-green" href="#">Nombre</a>
+  <a class="w3-bar-item w3-button w3-hover-green" href="#">Nombre</a>
+ 
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Quienes somos</h1>
+      <p>Somos un grupo de jóvenes emprendedores especializados en  programación e ingeniería con ideas innovadoras para el desarrollo de proyectos agropecuarios y acompañamiento de los productores.</p>
+      <br>
+      <img src="/static/media/Trabajo-en-equipo.jpg" alt="logo_3" width="500" alt="300">
+    </div>
+      
+    <div class="w3-third w3-container">
+      <img src="/static/media/logo_tecnoagro (5).jpeg" alt="logo" width="300" alt="300">  
+      <!--<p class="w3-border w3-padding-large w3-padding-64 w3-center">gifs</p>-->
+    </div>
+  </div>
+  {% endblock %}	
+  
+
+  
