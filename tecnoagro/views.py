@@ -5,6 +5,8 @@ from django.views import generic
 from .forms import Usuarioconsulta, Usuarioform
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
+from django.contrib.auth.decorators import login_required, permission_required
+from django.contrib.auth import login, authenticate
 
 # Create your views here.
 def consultar(request):
@@ -21,7 +23,7 @@ def aplicaciones(request):
 
 def registro(request):
 	return render(request, 'registro.html', {})
-
+@login_required
 def descargas(request):
 	return render(request, 'descargas.html', {})
 
@@ -36,6 +38,9 @@ def consulta_usuario(request):
             data['mensaje'] = "Consulta enviada "
 
     return render(request, 'consulta.html',data)
+
+def login(request):
+    return render(request, 'login.html', {})
 	
 class UserRegisterView(generic.CreateView):
     form_class = UserCreationForm
