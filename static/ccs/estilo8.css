@@ -105,18 +105,24 @@ input:focus, textarea:focus {
 }
 
 
-input[type="submit"] {
-	margin-bottom: 0;
+input[type='submit'] {
+	width: 100%;
+	padding: 10px;
+	border: 2px solid black;
 	background: #14bd22;
-	color: #fff;
+	color: white;
+	cursor: pointer;
+	text-transform: uppercase;
+	margin-bottom: 0;
 	border: none;
 }
-
-input[type="submit"]:hover{
-	background: #14bd22;
-	cursor: pointer;
+input[type='text'] {
+	width: 100%;
+	padding: 10px;
+	border: 2px solid black;
+	margin-bottom: 5px;
+	margin-top: 20px;
 }
-
 .consulta{
 	margin :3%;
 }
@@ -190,6 +196,13 @@ main .weather{
 }
 
 
+.input weather[type='text'] {
+	width: 300%;
+}
+
+form .weather{
+	margin-bottom: 100px;
+}
 
 
 
