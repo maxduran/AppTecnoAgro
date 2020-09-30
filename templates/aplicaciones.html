@@ -6,10 +6,29 @@
         <div class="w3-row w3-padding-32">
             <div class="w3-twothird w3-container">
                 <h2 class="w3-text-teal">Aplicaciones</h2>
+                <h4><p>Herramientas en la gestión diaria.</p></h4>
                 <br>
-                <p>Herramientas en la gestión diaria.</p>
-                <br><br>
-                
+                    <div class="w3-main" style="margin-left:250px">
+                        <div class="weather">
+                            <div id="main">
+                                <h1>Consultar datos meteorológicos</h1>
+                                <form method="GET">
+                                <label for="city"></label>
+                                <input type="text" name="city" id="city" value="{{ request.GET.city }}" placeholder="Localidad...">
+                                <input type="submit" value="Enviar"/>
+                                </form>
+                                {% if clima %}
+                                    <h3>{{ clima.region }} || {{ clima.daytime }}hs</h3>
+                                    <h3>{{ clima.status }}</h3>
+                                    <h3>{{ clima.temp }}° C</h3>
+                                    <h3>Velocidad del viento: {{ clima.wind }}</h3>
+                                    <h3>Humedad Relativa: {{ clima.relhum }}</h3>
+                                    <h3>Probabilidad de lluvias: {{ clima.pbrain }}</h3>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                <br>
             </div>
     
             <div class="w3-third w3-container">

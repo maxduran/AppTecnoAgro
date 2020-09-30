@@ -175,7 +175,19 @@ main .social{
 	transform: scale(1.3,1.3);
 }
 
-
+/* Aplicaciones */
+* .weather{
+	margin: 10%;
+	font-family: 'Bitstream Vera Sans Mono', Monaco, 'Aharoni', Courier, monospace;
+	box-sizing: border-box;
+}
+main .weather{
+	text-align: center;
+	padding-top: 100px;
+	position: fixed;
+    right: -20px;
+	top: 0px;
+}
 
 
 

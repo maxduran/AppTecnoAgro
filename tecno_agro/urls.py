@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('tecnoagro.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('', include('clima.urls')),
 ]
